@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI & Machine Learning Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: { 500: '#6366f1', 600: '#4f46e5' }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- Navigation -->
+  <nav class="max-w-5xl mx-auto px-6 py-6 flex justify-between items-center border-b border-slate-800">
+    <span class="text-xl font-bold tracking-wider text-indigo-400">&lt;AI.Student /&gt;</span>
+    <div class="space-x-6 text-sm text-slate-400">
+      <a href="#about" class="hover:text-indigo-400 transition">About</a>
+      <a href="#skills" class="hover:text-indigo-400 transition">Skills</a>
+      <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
+      <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero / About Section -->
+  <header id="about" class="max-w-5xl mx-auto px-6 py-16">
+    <div class="flex flex-col md:flex-row items-center gap-10">
+      <!-- Profile Picture -->
+      <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 relative">
+        <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-indigo-500 to-purple-600 blur opacity-75"></div>
+        <img src="profile.jpg" alt="Profile Picture" class="relative w-full h-full object-cover rounded-2xl shadow-2xl border-2 border-slate-700" />
+      </div>
+
+      <!-- Introduction -->
+      <div class="text-center md:text-left">
+        <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wide text-indigo-400 bg-indigo-950/60 rounded-full border border-indigo-800">
+          AI & Data Science Student
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
+          Building Intelligent Systems & <span class="text-indigo-500">Machine Learning</span> Solutions
+        </h1>
+        <p class="text-slate-400 text-base leading-relaxed mb-6">
+          Passionate about Computer Vision, Natural Language Processing, and Predictive Modeling. Currently focusing on developing end-to-end AI applications using PyTorch, TensorFlow, and Python.
+        </p>
+        <div class="flex flex-wrap justify-center md:justify-start gap-4">
+          <a href="#projects" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-6 py-3 rounded-lg shadow-lg shadow-indigo-600/30 transition">View Projects</a>
+          <a href="https://linkedin.com" target="_blank" class="border border-slate-700 hover:border-slate-500 text-slate-300 font-medium px-6 py-3 rounded-lg transition">LinkedIn Profile</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Skills Section -->
+  <section id="skills" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-800">
+    <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-2">
+      <i class="fa-solid fa-microchip text-indigo-500"></i> Technical Skills
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-slate-900/60 p-6 rounded-xl border border-slate-800">
+        <h3 class="text-lg font-semibold text-indigo-400 mb-4">Core AI & ML</h3>
+        <ul class="space-y-2 text-slate-300 text-sm">
+          <li>• Machine Learning (Scikit-Learn)</li>
+          <li>• Deep Learning (PyTorch, TensorFlow)</li>
+          <li>• Computer Vision (OpenCV, YOLO)</li>
+          <li>• NLP & LLM Fine-Tuning</li>
+        </ul>
+      </div>
+      <div class="bg-slate-900/60 p-6 rounded-xl border border-slate-800">
+        <h3 class="text-lg font-semibold text-indigo-400 mb-4">Programming & Data</h3>
+        <ul class="space-y-2 text-slate-300 text-sm">
+          <li>• Python (Pandas, NumPy, Seaborn)</li>
+          <li>• SQL & Database Management</li>
+          <li>• Data Structures & Algorithms</li>
+          <li>• REST APIs (FastAPI, Flask)</li>
+        </ul>
+      </div>
+      <div class="bg-slate-900/60 p-6 rounded-xl border border-slate-800">
+        <h3 class="text-lg font-semibold text-indigo-400 mb-4">Tools & Deployment</h3>
+        <ul class="space-y-2 text-slate-300 text-sm">
+          <li>• Git & GitHub Version Control</li>
+          <li>• Docker Containerization</li>
+          <li>• Jupyter & Google Colab</li>
+          <li>• Streamlit / Hugging Face Spaces</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-800">
+    <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-2">
+      <i class="fa-solid fa-code-branch text-indigo-500"></i> Featured AI Projects
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Project 1 -->
+      <div class="bg-slate-900/80 rounded-xl p-6 border border-slate-800 hover:border-indigo-500/50 transition">
+        <span class="text-xs font-mono text-indigo-400">Computer Vision</span>
+        <h3 class="text-xl font-bold text-white mt-1 mb-2">Real-Time Object Detection System</h3>
+        <p class="text-slate-400 text-sm mb-4">
+          Developed an end-to-end object detection model using YOLOv8 trained on custom datasets for automated monitoring.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="text-xs bg
