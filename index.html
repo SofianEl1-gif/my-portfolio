@@ -36,4 +36,204 @@
 
   <!-- Hero Section -->
   <header id="about" class="max-w-6xl mx-auto px-6 py-20">
-    <div class="flex flex-col md
+    <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+      <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 relative">
+        <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur-lg opacity-70"></div>
+        <img src="profile.jpg" alt="Profile Picture" class="relative w-full h-full object-cover rounded-2xl border border-slate-700 shadow-2xl" />
+      </div>
+
+      <div class="text-center md:text-left flex-1">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 mb-6 text-xs font-semibold tracking-wide text-indigo-300 bg-indigo-950/80 rounded-full border border-indigo-700/50">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Open to Opportunities
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-4 leading-tight">
+          AI & Data Science <br/><span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">Engineer</span>
+        </h1>
+        <p class="text-slate-300 text-lg leading-relaxed mb-8 max-w-2xl">
+          Passionate about building scalable AI architectures, Computer Vision pipelines, and Deep Learning models. Dedicated to solving complex real-world problems through data-driven insights.
+        </p>
+        <div class="flex flex-wrap justify-center md:justify-start gap-4">
+          <a href="#projects" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-7 py-3 rounded-xl shadow-lg shadow-indigo-600/30 transition">Explore Projects</a>
+          <a href="#contact" class="border border-slate-700 hover:border-slate-500 text-slate-300 font-semibold px-7 py-3 rounded-xl transition">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Skills Section -->
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-800/80">
+    <h2 class="text-3xl font-bold text-white mb-2 flex items-center gap-3">
+      <i class="fa-solid fa-code text-indigo-500"></i> Technical Expertise
+    </h2>
+    <p class="text-slate-400 mb-10 text-sm">Core competencies & technologies I work with.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-slate-900/60 p-8 rounded-2xl border border-slate-800 hover:border-indigo-500/40 transition">
+        <div class="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center text-indigo-400 mb-6 text-xl">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-4">Machine & Deep Learning</h3>
+        <ul class="space-y-3 text-slate-300 text-sm">
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i> PyTorch, TensorFlow, Keras</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i> Scikit-Learn, XGBoost</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i> Neural Networks (CNN, RNN, Transformers)</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400 text-xs"></i> Model Optimization & Evaluation</li>
+        </ul>
+      </div>
+
+      <div class="bg-slate-900/60 p-8 rounded-2xl border border-slate-800 hover:border-indigo-500/40 transition">
+        <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-400 mb-6 text-xl">
+          <i class="fa-solid fa-eye"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-4">Computer Vision & NLP</h3>
+        <ul class="space-y-3 text-slate-300 text-sm">
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400 text-xs"></i> OpenCV, YOLOv8, Object Detection</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400 text-xs"></i> Image Segmentation & Classification</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400 text-xs"></i> Hugging Face Transformers & BERT</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400 text-xs"></i> LLM Fine-Tuning & RAG Pipelines</li>
+        </ul>
+      </div>
+
+      <div class="bg-slate-900/60 p-8 rounded-2xl border border-slate-800 hover:border-indigo-500/40 transition">
+        <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 mb-6 text-xl">
+          <i class="fa-solid fa-database"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-4">Data Engineering & MLOps</h3>
+        <ul class="space-y-3 text-slate-300 text-sm">
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 text-xs"></i> Python, SQL, Pandas, NumPy</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 text-xs"></i> Docker, Git, MLflow</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 text-xs"></i> FastAPI, Streamlit Deployment</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 text-xs"></i> PostgreSQL & Vector Databases (Chroma)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-800/80">
+    <h2 class="text-3xl font-bold text-white mb-2 flex items-center gap-3">
+      <i class="fa-solid fa-diagram-project text-indigo-500"></i> Featured Projects
+    </h2>
+    <p class="text-slate-400 mb-12 text-sm">Production-ready Machine Learning and Data Science applications.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Project 1 -->
+      <div class="bg-slate-900/80 rounded-2xl p-8 border border-slate-800 flex flex-col justify-between hover:border-indigo-500/50 transition">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <span class="text-xs font-mono px-3 py-1 bg-indigo-950/80 text-indigo-300 rounded-md border border-indigo-800">Computer Vision</span>
+            <span class="text-xs text-slate-400 font-mono">PyTorch</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3">Medical Image Segmentation (Brain MRI)</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Implemented a U-Net architecture to segment brain tumors from MRI scans with a 94.2% Dice coefficient. Integrated an interactive Streamlit UI for automated clinical visualization.
+          </p>
+        </div>
+        <div>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-md">PyTorch</span>
+            <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-md">U-Net</span>
+            <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-md">OpenCV</span>
+            <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-md">Streamlit</span>
+          </div>
+          <div class="flex items-center gap-6">
+            <a href="https://github.com/SofianEl1-gif" target="_blank" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition flex items-center gap-2">View Source Code <i class="fa-solid fa-arrow-right text-xs"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-slate-900/80 rounded-2xl p-8 border border-slate-800 flex flex-col justify-between hover:border-indigo-500/50 transition">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <span class="text-xs font-mono px-3 py-1 bg-purple-950/80 text-purple-300 rounded-md border border-purple-800">LLM & NLP</span>
+            <span class="text-xs text-slate-400 font-mono">LangChain</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3">RAG-Powered Document Query Assistant</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Built a Retrieval-Augmented Generation (RAG) system using LangChain, OpenAI API, and ChromaDB to perform semantic Q&A over custom PDF/TXT knowledge repositories.
+          </p>
+        </div>
+        <div>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-md">LangChain</span>
+            <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-md">ChromaDB</span>
+            <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-md">Python</span>
+            <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-md">FastAPI</span>
+          </div>
+          <div class="flex items-center gap-6">
+            <a href="https://github.com/SofianEl1-gif" target="_blank" class="text-sm font-semibold text-purple-400 hover:text-purple-300 transition flex items-center gap-2">View Source Code <i class="fa-solid fa-arrow-right text-xs"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-slate-900/80 rounded-2xl p-8 border border-slate-800 flex flex-col justify-between hover:border-indigo-500/50 transition">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <span class="text-xs font-mono px-3 py-1 bg-emerald-950/80 text-emerald-300 rounded-md border border-emerald-800">Predictive Analytics</span>
+            <span class="text-xs text-slate-400 font-mono">Scikit-Learn</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3">Customer Churn & Retention Model</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Engineered an end-to-end churn prediction pipeline using XGBoost with hyperparameter optimization. Identified key retention metrics for business decision-making.
+          </p>
+        </div>
+        <div>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-md">XGBoost</span>
+            <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-md">Pandas</span>
+            <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-md">Seaborn</span>
+            <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-md">Docker</span>
+          </div>
+          <div class="flex items-center gap-6">
+            <a href="https://github.com/SofianEl1-gif" target="_blank" class="text-sm font-semibold text-emerald-400 hover:text-emerald-300 transition flex items-center gap-2">View Source Code <i class="fa-solid fa-arrow-right text-xs"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="bg-slate-900/80 rounded-2xl p-8 border border-slate-800 flex flex-col justify-between hover:border-indigo-500/50 transition">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <span class="text-xs font-mono px-3 py-1 bg-amber-950/80 text-amber-300 rounded-md border border-amber-800">Real-Time ML</span>
+            <span class="text-xs text-slate-400 font-mono">YOLOv8</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3">Real-Time Traffic & Vehicle Detection</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Trained a YOLOv8 object detection model on custom highway datasets to monitor traffic density and vehicle speed estimation in real-time video streams.
+          </p>
+        </div>
+        <div>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-md">YOLOv8</span>
+            <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-md">OpenCV</span>
+            <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-md">DeepSORT</span>
+            <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-md">Python</span>
+          </div>
+          <div class="flex items-center gap-6">
+            <a href="https://github.com/SofianEl1-gif" target="_blank" class="text-sm font-semibold text-amber-400 hover:text-amber-300 transition flex items-center gap-2">View Source Code <i class="fa-solid fa-arrow-right text-xs"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer / Contact -->
+  <footer id="contact" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/80 text-center">
+    <h2 class="text-2xl font-bold text-white mb-4">Let's Connect & Collaborate</h2>
+    <p class="text-slate-400 text-sm mb-8 max-w-md mx-auto">Feel free to reach out for research collaborations, project inquiries, or software roles.</p>
+    
+    <div class="flex justify-center space-x-6 text-slate-300 mb-10">
+      <a href="https://github.com/SofianEl1-gif" target="_blank" class="w-12 h-12 bg-slate-900 border border-slate-800 rounded-xl flex items-center justify-center hover:border-indigo-500 hover:text-indigo-400 transition text-lg"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com" target="_blank" class="w-12 h-12 bg-slate-900 border border-slate-800 rounded-xl flex items-center justify-center hover:border-indigo-500 hover:text-indigo-400 transition text-lg"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:sofiane@example.com" class="w-12 h-12 bg-slate-900 border border-slate-800 rounded-xl flex items-center justify-center hover:border-indigo-500 hover:text-indigo-400 transition text-lg"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+
+    <p class="text-xs text-slate-500">© 2026 Sofiane. Designed with Tailwind CSS & Hosted on GitHub Pages.</p>
+  </footer>
+
+</body>
+</html>
